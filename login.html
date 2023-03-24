@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- swiper css link  -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <title>Login Form</title>
+</head>
+
+<body>
+  <header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i> Courier
+    </a>
+    <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="home.html">home</a>
+      <a href="about.html">about</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+      <a href="login.html" id="account-btn" class="fas fa-user"></a>
+      <a href="login.html" id="menu-btn" class="fas fa-bars"></a>
+    </div>
+
+  </header>
+
+  <section class="heading-link">
+    <h3>Login</h3>
+    <p> <a href="home.html">home</a> / Login </p>
+  </section>
+
+
+  <section class="vh-100" style="background-color: #eee;">
+    <div class="container py-5 h-100" id="form-2">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+
+              <h3 class="mb-5">Sign in</h3>
+
+              <!-- <div class="form-outline mb-4">
+                <a href="#" class="mr-2" onclick="formTwo()" id="btn-2" style="color:
+                red;">StoreAgent</a>
+                <a href="#" class="mr-2" onclick="formThree()" id="btn-3">DeliveryBoy</a>
+              </div> -->
+              <form id="login_form" method="POST">
+
+
+                <div class="form-outline mb-4">
+                  <label class="font-weight-bold form-label box" for="userRole">User Type</label>
+                  <select id="userRole" name="userRole" class="form-control form-control-lg">
+                    <option value="" selected>Select User Type</option>
+                    <option value="STOREAGENT">StoreAgent</option>
+                    <option value="DELIVERBOY">DeliverBoy</option>
+                  </select>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label box" for="typeEmailX-2">Email</label>
+                  <input type="email" id="email" name="email" class="form-control form-control-lg box" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="typePasswordX-2">Password</label>
+                  <input type="password" id="password" name="password" class="form-control form-control-lg" />
+                </div>
+
+                <!-- Checkbox -->
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                      <label class="form-check-label" for="form2Example31"> Remember me </label>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <!-- Simple link -->
+                    <a href="forgotpassword.html">Forgot password?</a>
+                  </div>
+                </div>
+
+                <div class="pt-1 mb-4">
+                  <input type="button" value="Login" class="btn btn-primary py-2 px-5 loginJobSeeker" />
+                </div>
+
+                <!-- <a class="btn btn-primary btn-lg btn-block" type="submit" href="./agent/home.html">StoreAgent</a> -->
+              </form>
+
+              <hr class="my-4">
+
+              <div class="text-center">
+                <p>Not a member? <a href="signup.html">Register</a></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- </section> -->
+
+    <!-- <section class="vh-100" style="background-color: #eee;"> -->
+    <!-- <div class="container py-5 h-100" id="form-3" style="display: none;">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+
+              <h3 class="mb-5">Sign in</h3>
+
+              <div class="form-outline mb-4">
+                <a href="#" class="mr-2" onclick="formTwo()" id="btn-2">StoreAgent</a>
+                <a href="#" class="mr-2" onclick="formThree()" id="btn-3" style="color:
+                red;">DeliverBoy</a>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+                <label class="form-label" for="typeEmailX-2">Email</label>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                <label class="form-label" for="typePasswordX-2">Password</label>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                    <label class="form-check-label" for="form2Example31"> Remember me </label>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <a href="forgotpassword.html">Forgot password?</a>
+                </div>
+              </div>
+
+              <a class="btn btn-primary btn-lg btn-block" type="submit" href="./delivery/updateorder.html">Delivery
+                boy</a>
+
+              <hr class="my-4">
+
+              <div class="text-center">
+                <p>Not a member? <a href="signup.html">Register</a></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3> <i class="fas fa-shopping-bag"></i> Courier </h3>
+        <p>Several key qualities also make you a good candidate for a
+          courier position.</p>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="home.html" class="link">home</a>
+        <a href="about.html" class="link">about</a>
+        <a href="courses.html" class="link">Services</a>
+        <a href="contact.html" class="link">contact</a>
+      </div>
+
+      <div class="box">
+        <h3>useful links</h3>
+        <a href="#" class="link">help center</a>
+        <a href="#" class="link">ask questions</a>
+        <a href="#" class="link">send feedback</a>
+        <a href="#" class="link">private policy</a>
+        <a href="#" class="link">terms of use</a>
+      </div>
+
+      <div class="box">
+        <h3>newsletter</h3>
+        <p>subscribe for latest upadates</p>
+        <form action="">
+          <input type="email" name="" placeholder="enter your email" id="" class="email">
+          <input type="submit" value="subscribe" class="btn">
+        </form>
+      </div>
+
+    </div>
+
+    <div class="credit"> created by <span>ms. web designer</span> | all
+      rights reserved! </div>
+
+  </section>
+
+  <!-- footer section ends -->
+
+
+  <!-- swiper js link  -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+  <script src="js/login.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</body>
+
+</html>
